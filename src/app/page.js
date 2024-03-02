@@ -1,12 +1,14 @@
 "use client";
+import HelloWorld from "@/app/HelloWorld";
 import SimpleInput from "@/SimpleInput";
-import HelloWorld from "@/HelloWorld";
 
-
+import styles from "./page.module.css"
+import React, { useState } from 'react';
 export default function HomePage() {
+  const [showFields, setShowFields] = useState(true);
   return (
   <>
-  <main className={style.main}>
+  <main className={ styles.bodText }>
     <HelloWorld />
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
       In et tempus ligula. Phasellus quis feugiat mauris, at vulputate 
@@ -20,7 +22,8 @@ export default function HomePage() {
     
     </main> 
     <footer>
-      <SimpleInput />
+    {showFields ? <SimpleInput /> : null}
+        <button onClick={() => { setShowFields(false) }}>Remove</button>
     </footer>
     </> )
 }

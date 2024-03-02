@@ -1,6 +1,7 @@
-.main {
-  background-color:  chartreuse;
+.bodyText {
+  background-color:  rgb(127, 255, 0);
 }
-.main p {
-  color: brown;
+.bodyText p,
+.bodyText h1 {
+  color: rgb(202, 60, 60);
 }
