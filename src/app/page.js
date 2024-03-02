@@ -1,6 +1,6 @@
 "use client";
 import HelloWorld from "@/app/HelloWorld";
-import SimpleInput from "@/SimpleInput";
+import SimpleInput from "@/app/SimpleInput";
 
 import styles from "./page.module.css"
 import React, { useState } from 'react';
