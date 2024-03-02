@@ -1,14 +1,13 @@
 "use client";
 import HelloWorld from "@/app/HelloWorld";
 import SimpleInput from "@/app/SimpleInput";
-
 import styles from "./page.module.css"
 import React, { useState } from 'react';
 export default function HomePage() {
   const [showFields, setShowFields] = useState(true);
   return (
   <>
-  <main className={ styles.bodText }>
+  <main className={styles.bodyText}>
     <HelloWorld />
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
       In et tempus ligula. Phasellus quis feugiat mauris, at vulputate 
@@ -18,12 +17,13 @@ export default function HomePage() {
       Quisque faucibus cursus tortor. Pellentesque ex est, posuere 
       et neque convallis, dapibus euismod velit. Aenean tempor id leo 
       at tincidunt. Sed at nunc finibus, pulvinar elit a, efficitur 
-      velit. Pellentesque lacinia ipsum eu ultrices varius.</p>
+      velit. Pellentesque lacinia ipsum eu ultrices varius.
+      </p>
     
     </main> 
     <footer>
     {showFields ? <SimpleInput /> : null}
         <button onClick={() => { setShowFields(false) }}>Remove</button>
     </footer>
-    </> )
+    </> );
 }
