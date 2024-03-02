@@ -1,7 +1,13 @@
+"use client";
+import SimpleInput from "@/SimpleInput";
+import HelloWorld from "@/HelloWorld";
+
+
 export default function HomePage() {
   return (
-  <><main>
-    <h1>Hello, world!</h1>
+  <>
+  <main>
+    <HelloWorld />
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
       In et tempus ligula. Phasellus quis feugiat mauris, at vulputate 
       mi. Nam semper hendrerit velit, sed sollicitudin sapien pharetra 
@@ -13,6 +19,8 @@ export default function HomePage() {
       velit. Pellentesque lacinia ipsum eu ultrices varius.</p>
     
     </main> 
-    <footer></footer>
+    <footer>
+      <SimpleInput />
+    </footer>
     </> )
 }
