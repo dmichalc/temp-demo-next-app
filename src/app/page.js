@@ -6,7 +6,7 @@ import HelloWorld from "@/HelloWorld";
 export default function HomePage() {
   return (
   <>
-  <main>
+  <main className={style.main}>
     <HelloWorld />
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
       In et tempus ligula. Phasellus quis feugiat mauris, at vulputate 
