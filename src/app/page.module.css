@@ -1,7 +1,9 @@
 .bodyText {
   background-color:  rgb(188, 235, 141);
 }
-.bodyText p,
+.bodyText p {
+  color:black
+}
 .bodyText h1 {
-  color: rgb(99, 81, 81);
+  color: rgb(231, 10, 10);
 }
