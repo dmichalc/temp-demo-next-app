@@ -19,6 +19,7 @@ export default function HomePage() {
       at tincidunt. Sed at nunc finibus, pulvinar elit a, efficitur 
       velit. Pellentesque lacinia ipsum eu ultrices varius.
       </p>
+      <Test />
     
     </main> 
     <footer>
